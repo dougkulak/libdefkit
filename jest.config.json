@@ -1,0 +1,35 @@
+{
+  "preset": "ts-jest",
+  "collectCoverage": true,
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/src/main/ts/cli.ts"
+  ],
+  "collectCoverageFrom": [
+    "<rootDir>/src/main/ts/**/*.ts"
+  ],
+  "testMatch": [
+    "<rootDir>/src/test/ts/**/*.ts",
+    "<rootDir>/src/test/js/**/*.js"
+  ],
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "<rootDir>/src/test/stub"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "snapshotResolver": "<rootDir>/jest.snapshot.cjs",
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.test.json"
+    }
+  }
+}
