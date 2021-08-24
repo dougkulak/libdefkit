@@ -1,9 +1,14 @@
 {
+  "private": false,
   "name": "@dougkulak/libdefkit",
   "version": "0.0.0",
-  "private": false,
   "description": "Util toolset to produce single-file TS and Flow libdefs",
+  "license": "MIT",
+  "author": "Doug Kulak <dougkulak@gmail.com>",
   "source": "src/main/ts/index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "libdefkit": "./target/es5/cli.js"
   },
@@ -93,7 +98,5 @@
     "typescript": "^4.3.5",
     "yargs-parser": "^20.2.9"
   },
-  "prettier": "prettier-config-dougkulak",
-  "author": "Doug Kulak <dougkulak@gmail.com>",
-  "license": "MIT"
+  "prettier": "prettier-config-dougkulak"
 }
